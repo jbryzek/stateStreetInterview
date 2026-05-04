@@ -1,4 +1,7 @@
 package org.example.exception;
 
-public class CarNotAvailableException {
+public class CarNotAvailableException extends RuntimeException{
+    public CarNotAvailableException(String message){
+        super(message);
+    }
 }
